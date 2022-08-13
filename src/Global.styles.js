@@ -5,8 +5,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: #3f4c56;
-    color: #fff;
+    background: #fff;
+    color: #000;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
   .active { 

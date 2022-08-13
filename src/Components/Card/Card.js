@@ -26,8 +26,9 @@ const Card = () => {
         <h2>1) lorem dfdsbv svbfb uyeGhjCB asxlkaodj</h2>
         <ul>
           {ans.map((item, index) => (
-            <li key={index} onClick={(e) => handleAns(e, item)}>
-              {selected.map((x) => (x === item ? selectedItem() : ""))}
+            <li key={index} onClick={(e) => handleAns(e, item)} className={selected.includes(item) ? "selected" : ""}>
+              {/* {selected.map((x) => (x === item ? selectedItem() : ""))} */}
+              {selected.includes(item) ? selectedItem() : ""}
               {item}
             </li>
           ))}
